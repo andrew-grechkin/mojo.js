@@ -1,8 +1,8 @@
-import type {App} from './app.js';
-import type {Context} from './context.js';
-import type {Route} from './router/route.js';
-import type {SafeString} from './util.js';
-import type {ValidatorResult} from './validator/result.js';
+import type {App} from 'app';
+import type {Context} from 'context';
+import type {Route} from 'router/route';
+import type {SafeString} from 'util';
+import type {ValidatorResult} from 'validator/result';
 import type {Agent} from 'node:http';
 import type {Readable, Stream} from 'node:stream';
 import type {URL} from 'node:url';
@@ -11,6 +11,8 @@ import type {Test} from 'tap';
 import type {CookieJar} from 'tough-cookie';
 
 export type {JSONValue} from '@mojojs/util';
+
+import {Buffer} from "node:buffer"
 
 export interface JSONSchema {
   $id?: string;

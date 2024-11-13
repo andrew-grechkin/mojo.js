@@ -3,8 +3,8 @@
  * Copyright (C) 2021-2024 Sebastian Riedel
  * MIT Licensed
  */
-import type {AppOptions} from './types.js';
-import {App} from './app.js';
+import type {AppOptions} from 'types';
+import {App} from 'app';
 import Path from '@mojojs/path';
 
 export const version = JSON.parse(
@@ -37,18 +37,18 @@ export default function mojo(options?: AppOptions): App {
 }
 
 // "Professor: These old Doomsday devices are dangerously unstable. I'll rest easier not knowing where they are."
-export {default as jsonConfigPlugin} from './plugins/json-config.js';
-export {default as yamlConfigPlugin} from './plugins/yaml-config.js';
-export {default as mountPlugin} from './plugins/mount.js';
-export {CGI} from './cgi.js';
-export {Logger} from './logger.js';
-export {Server} from './server.js';
-export {Session} from './session.js';
-export {TestUserAgent} from './user-agent/test.js';
-export {UserAgent} from './user-agent.js';
-export * as util from './util.js';
+export {default as jsonConfigPlugin} from 'plugins/json-config';
+export {default as yamlConfigPlugin} from 'plugins/yaml-config';
+export {default as mountPlugin} from 'plugins/mount';
+export {CGI} from 'cgi';
+export {Logger} from 'logger';
+export {Server} from 'server';
+export {Session} from 'session';
+export {TestUserAgent} from 'user-agent/test';
+export {UserAgent} from 'user-agent';
+export * as util from 'util';
 
-export {
+export type {
   JSONValue,
   MojoAction,
   MojoApp,
@@ -58,4 +58,4 @@ export {
   MojoRoute,
   MojoTags,
   MojoURLOptions
-} from './types.js';
+} from 'types';

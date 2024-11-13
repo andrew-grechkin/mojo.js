@@ -1,8 +1,8 @@
-import type {MojoApp, ServerResponseBody} from './types.js';
+import type {MojoApp, ServerResponseBody} from 'types';
 import {Stream, type Readable} from 'node:stream';
-import {ServerRequest} from './server/request.js';
-import {ServerResponse} from './server/response.js';
-import {httpStatusMessages} from './util.js';
+import {ServerRequest} from 'server/request';
+import {ServerResponse} from 'server/response';
+import {httpStatusMessages} from 'util';
 
 /**
  * CGI class. Is this a joke? Yes. Could you use it in production anyway? Probably.

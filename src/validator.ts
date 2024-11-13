@@ -1,5 +1,5 @@
-import type {JSONSchema, ValidatorFunction} from './types.js';
-import {ValidatorResult} from './validator/result.js';
+import type {JSONSchema, ValidatorFunction} from 'types';
+import {ValidatorResult} from 'validator/result';
 import Ajv, {type ValidateFunction} from 'ajv';
 
 /**

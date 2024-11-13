@@ -1,4 +1,4 @@
-import type {ConfigOptions, MojoApp} from '../types.js';
+import type {ConfigOptions, MojoApp} from 'types';
 import Path from '@mojojs/path';
 
 /**

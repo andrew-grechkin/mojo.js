@@ -1,7 +1,7 @@
-import type {App} from '../app.js';
-import type {ServerOptions, UserAgentOptions} from '../types.js';
-import {Server} from '../server.js';
-import {UserAgent} from '../user-agent.js';
+import type {App} from 'app';
+import type {ServerOptions, UserAgentOptions} from 'types';
+import {Server} from 'server';
+import {UserAgent} from 'user-agent';
 
 /**
  * Mock user-agent class.

@@ -1,8 +1,8 @@
-import type {App} from './app.js';
-import type {ChildLogger} from './logger.js';
-import type {Plan} from './router/plan.js';
-import type {ServerRequest} from './server/request.js';
-import type {ServerResponse} from './server/response.js';
+import type {App} from 'app';
+import type {ChildLogger} from 'logger';
+import type {Plan} from 'router/plan';
+import type {ServerRequest} from 'server/request';
+import type {ServerResponse} from 'server/response';
 import type {
   BackendInfo,
   MojoAction,
@@ -14,14 +14,14 @@ import type {
   SessionData,
   UploadOptions,
   ValidatorFunction
-} from './types.js';
-import type {UserAgent} from './user-agent.js';
-import type {WebSocket} from './websocket.js';
+} from 'types';
+import type {UserAgent} from 'user-agent';
+import type {WebSocket} from 'websocket';
 import type Path from '@mojojs/path';
 import EventEmitter from 'node:events';
 import querystring from 'node:querystring';
-import {Params} from './body/params.js';
-import {SafeString} from './util.js';
+import {Params} from 'body/params';
+import {SafeString} from 'util';
 
 type WebSocketHandler = (ws: WebSocket) => void | Promise<void>;
 

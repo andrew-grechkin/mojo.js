@@ -1,9 +1,9 @@
-import type {JSONValue, UploadOptions} from './types.js';
+import type {JSONValue, UploadOptions} from 'types';
 import type {Readable, Writable} from 'node:stream';
 import {on} from 'node:events';
 import zlib from 'node:zlib';
-import {Params} from './body/params.js';
-import {Headers} from './headers.js';
+import {Params} from 'body/params';
+import {Headers} from 'headers';
 import DOM from '@mojojs/dom';
 import busboy from 'busboy';
 import yaml from 'js-yaml';

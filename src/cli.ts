@@ -1,5 +1,5 @@
-import type {App} from './app.js';
-import {loadModules} from './util.js';
+import type {App} from 'app';
+import {loadModules} from 'util';
 import Path from '@mojojs/path';
 import {tablify} from '@mojojs/util';
 import nopt from 'nopt';

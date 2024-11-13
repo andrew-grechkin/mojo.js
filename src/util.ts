@@ -219,13 +219,13 @@ export async function loadModules(dirs: string[]): Promise<Record<string, any>> 
   for (const dir of dirs.map(path => new Path(path))) {
     if ((await dir.exists()) === false) continue;
     for await (const file of dir.list({recursive: true})) {
-      if (/\.m?js$/.test(file.toString()) === false) continue;
+      if (/\.m?ts$/.test(file.toString()) === false) continue;
       const imports = await import(file.toFileURL().toString());
       const name = dir
         .relative(file)
         .toArray()
         .join('/')
-        .replace(/\.m?js$/, '');
+        .replace(/\.m?ts$/, '');
       modules[name] = imports.default ?? null;
     }
   }

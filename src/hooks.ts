@@ -1,4 +1,4 @@
-import type {MojoApp} from './types.js';
+import type {MojoApp} from 'types';
 import {AsyncHooks} from '@mojojs/util';
 
 /**

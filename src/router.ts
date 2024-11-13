@@ -1,8 +1,8 @@
-import type {MojoContext, PlaceholderType} from './types.js';
-import {Cache} from './cache.js';
-import {Plan} from './router/plan.js';
-import {Route} from './router/route.js';
-import * as util from './util.js';
+import type {MojoContext, PlaceholderType} from 'types';
+import {Cache} from 'cache';
+import {Plan} from 'router/plan';
+import {Route} from 'router/route';
+import * as util from 'util';
 
 type RouteIndex = Record<string, Route>;
 

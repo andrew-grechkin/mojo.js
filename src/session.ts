@@ -1,6 +1,6 @@
-import type {App} from './app.js';
-import type {Context} from './context.js';
-import type {SessionData} from './types.js';
+import type {App} from 'app';
+import type {Context} from 'context';
+import type {SessionData} from 'types';
 import crypto from 'node:crypto';
 import {promisify} from 'node:util';
 

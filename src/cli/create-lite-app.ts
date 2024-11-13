@@ -1,6 +1,6 @@
-import type {App} from '../app.js';
-import {version} from '../core.js';
-import * as util from '../util.js';
+import type {App} from 'app';
+import {version} from 'core';
+import * as util from 'util';
 
 /**
  * Application generator command.

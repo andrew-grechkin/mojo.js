@@ -1,4 +1,4 @@
-import type {Route} from './route.js';
+import type {Route} from 'router/route';
 
 /**
  * Router plan class.

@@ -1,8 +1,8 @@
-import type {Context} from '../context.js';
-import type {CookieOptions} from '../types.js';
+import type {Context} from 'context';
+import type {CookieOptions} from 'types';
 import type {Stream} from 'node:stream';
-import {stringifyCookie} from './cookie.js';
-import {Headers} from '../headers.js';
+import {stringifyCookie} from 'server/cookie';
+import {Headers} from 'headers';
 
 type SendResponse = (res: ServerResponse, body?: string | Buffer | Stream) => void;
 

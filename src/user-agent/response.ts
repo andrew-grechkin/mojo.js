@@ -1,5 +1,5 @@
 import type {Readable} from 'node:stream';
-import {Body} from '../body.js';
+import {Body} from 'body';
 
 interface UserAgentResponseOptions {
   body: Readable;

@@ -1,14 +1,15 @@
-import type {MojoApp, ServerOptions, ServerResponseBody} from './types.js';
+import type {MojoApp, ServerOptions, ServerResponseBody} from 'types';
 import type {Socket} from 'node:net';
 import cluster from 'node:cluster';
 import http from 'node:http';
 import https from 'node:https';
 import os from 'node:os';
+import {Buffer} from "node:buffer"
 import {Stream} from 'node:stream';
 import {URL} from 'node:url';
-import {ServerRequest} from './server/request.js';
-import {ServerResponse} from './server/response.js';
-import {WebSocket} from './websocket.js';
+import {ServerRequest} from 'server/request';
+import {ServerResponse} from 'server/response';
+import {WebSocket} from 'websocket';
 import Path from '@mojojs/path';
 import {termEscape} from '@mojojs/util';
 import {WebSocketServer} from 'ws';
@@ -260,7 +261,7 @@ export class Server {
 function sendHeaders(res: ServerResponse, raw: http.ServerResponse): void {
   const statusCode = res.statusCode;
   const statusMessage = res.statusMessage;
-  const headers = res.headers.toArray();
+  const headers = res.headers.toObject();
 
   if (statusMessage === null) {
     raw.writeHead(statusCode, headers);

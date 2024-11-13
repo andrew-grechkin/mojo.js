@@ -1,7 +1,7 @@
-import type {App} from '../app.js';
+import type {App} from 'app';
 import crypto from 'node:crypto';
-import {version} from '../core.js';
-import * as util from '../util.js';
+import {version} from 'core';
+import * as util from 'util';
 import nopt from 'nopt';
 
 /**

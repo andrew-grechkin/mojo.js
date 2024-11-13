@@ -1,4 +1,4 @@
-import type {Route} from './router/route.js';
+import type {Route} from 'router/route';
 import type {
   AnyArguments,
   AppOptions,
@@ -12,26 +12,26 @@ import type {
   ScopedNestedHelpers,
   ServerOptions,
   TestUserAgentOptions
-} from './types.js';
+} from 'types';
 import {Readable} from 'node:stream';
-import {CLI} from './cli.js';
-import {Context} from './context.js';
-import {Hooks} from './hooks.js';
-import {Logger} from './logger.js';
-import {Mime} from './mime.js';
-import defaultConditionsPlugin from './plugins/default-conditions.js';
-import defaultHelpersPlugin from './plugins/default-helpers.js';
-import tmplEnginePlugin from './plugins/tmpl-engine.js';
-import {Renderer} from './renderer.js';
-import {Router} from './router.js';
-import {ServerRequest} from './server/request.js';
-import {ServerResponse} from './server/response.js';
-import {Session} from './session.js';
-import {Static} from './static.js';
-import {MockUserAgent} from './user-agent/mock.js';
-import {TestUserAgent} from './user-agent/test.js';
-import {UserAgent} from './user-agent.js';
-import {Validator} from './validator.js';
+import {CLI} from 'cli';
+import {Context} from 'context';
+import {Hooks} from 'hooks';
+import {Logger} from 'logger';
+import {Mime} from 'mime';
+import defaultConditionsPlugin from 'plugins/default-conditions';
+import defaultHelpersPlugin from 'plugins/default-helpers';
+import tmplEnginePlugin from 'plugins/tmpl-engine';
+import {Renderer} from 'renderer';
+import {Router} from 'router';
+import {ServerRequest} from 'server/request';
+import {ServerResponse} from 'server/response';
+import {Session} from 'session';
+import {Static} from 'static';
+import {MockUserAgent} from 'user-agent/mock';
+import {TestUserAgent} from 'user-agent/test';
+import {UserAgent} from 'user-agent';
+import {Validator} from 'validator';
 import Path from '@mojojs/path';
 
 type AppHook = (app: App, ...args: any[]) => any;

@@ -1,9 +1,9 @@
-import type {UserAgentRequestOptions} from '../../types.js';
+import type {UserAgentRequestOptions} from 'types';
 import type {Socket} from 'node:net';
 import type {URL} from 'node:url';
 import http from 'node:http';
 import Stream from 'node:stream';
-import {UserAgentResponse} from '../response.js';
+import {UserAgentResponse} from 'user-agent/response';
 import {termEscape} from '@mojojs/util';
 
 /**

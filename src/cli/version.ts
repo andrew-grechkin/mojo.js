@@ -1,4 +1,4 @@
-import {version} from '../core.js';
+import {version} from 'core';
 import {tablify} from '@mojojs/util';
 
 /**

@@ -1,11 +1,11 @@
-import type {UserAgentOptions, UserAgentRequestOptions, UserAgentWebSocketOptions} from './types.js';
-import type {UserAgentResponse} from './user-agent/response.js';
-import type {WebSocket} from './websocket.js';
+import type {UserAgentOptions, UserAgentRequestOptions, UserAgentWebSocketOptions} from 'types';
+import type {UserAgentResponse} from 'user-agent/response';
+import type {WebSocket} from 'websocket';
 import {URL} from 'node:url';
-import {CookieJar} from './user-agent/cookie-jar.js';
-import {HTTPTransport} from './user-agent/transport/http.js';
-import {HTTPSTransport} from './user-agent/transport/https.js';
-import {WSTransport} from './user-agent/transport/ws.js';
+import {CookieJar} from 'user-agent/cookie-jar';
+import {HTTPTransport} from 'user-agent/transport/http';
+import {HTTPSTransport} from 'user-agent/transport/https';
+import {WSTransport} from 'user-agent/transport/ws';
 import {AsyncHooks} from '@mojojs/util';
 import FormData from 'form-data';
 import yaml from 'js-yaml';
